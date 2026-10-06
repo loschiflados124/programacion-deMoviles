@@ -66,6 +66,6 @@ No se usa Jetpack Compose.
 | Botón "Volver" | Regresa a MainActivity; se registran `onRestart`, `onStart`, `onResume` |
 | Rotación de pantalla | Logcat: `onPause`, `onStop`, `onDestroy`, `onCreate`, `onStart`, `onResume`. En pantalla la lista conservó todos los eventos anteriores y siguió con los de la nueva instancia (el ViewModel guarda el estado) |
 | Botón "Salir" (`finishAffinity()`) | MainActivity registró `onPause`, `onStop`, `onDestroy`; no quedó ninguna Activity de la app y el launcher quedó al frente |
-| Zip de entrega | `unzip -tq`: "No errors detected"; contiene el APK y los 6 archivos de `Codigo_Fuente` |
+| Zip de entrega | `unzip -tq`: "No errors detected"; contiene el APK, MainActivity.kt, SegundaActivity.kt, activity_main.xml y activity_segunda.xml (sin subcarpeta) |
 
 No se probó: el botón "Limpiar registro" se revisó solo por código (llama a `viewModel.limpiar()`), no se ejecutó en el emulador. Tampoco se probó en un dispositivo físico ni en otras versiones de Android.
