@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.utesa.ciclodevida.app-mergeDebugResources-36:/values-ldltr-v21/values-ldltr-v21.xml",
+            "map": [
+                {
+                    "source": "/Users/eymerbaez/.gradle/caches/8.14/transforms/114190330e3a252c64cb85e9c95e6659/transformed/appcompat-1.6.1/res/values-ldltr-v21/values-ldltr-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "112",
+                        "endOffsets": "163"
+                    }
+                }
+            ]
+        }
+    ]
+}

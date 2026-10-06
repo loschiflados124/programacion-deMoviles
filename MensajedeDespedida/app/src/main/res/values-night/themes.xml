@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Mismo tema claro también en modo noche (ver values/themes.xml). -->
+    <style name="Base.Theme.CicloDeVida" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/utesa_green</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:windowBackground">@color/fondo</item>
+    </style>
+</resources>

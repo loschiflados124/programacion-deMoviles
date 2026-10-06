@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  App: Ciclo de Vida
+  Estudiantes (Grupo 1):
+    Eymer Baez - Matrícula: 1-24-3833
+    Ebelio Francisco - Matrícula: 1-24-3647
+    Enrique Rincon - Matrícula: 1-24-3689
+    Angel Ventura - Matrícula: 1-24-3690
+-->
+<resources>
+    <string name="app_name">Ciclo de Vida</string>
+
+    <!-- MainActivity -->
+    <string name="titulo_ciclo_vida">Estados del Ciclo de Vida de una Activity</string>
+    <string name="estado_actual">Estado actual: %1$s</string>
+    <string name="estado_inicial">ninguno</string>
+    <string name="registro_vacio">(El registro está vacío)</string>
+    <string name="evento_formato">%1$s - %2$s(): %3$s</string>
+    <string name="boton_limpiar">Limpiar registro</string>
+    <string name="boton_segunda_pantalla">Ir a la segunda pantalla</string>
+
+    <!-- Descripciones de cada método del ciclo de vida -->
+    <string name="desc_onCreate">la Activity se crea por primera vez (o se recrea tras rotar la pantalla)</string>
+    <string name="desc_onStart">la Activity se vuelve visible para el usuario</string>
+    <string name="desc_onResume">la Activity está en primer plano y el usuario puede interactuar con ella</string>
+    <string name="desc_onPause">otra pantalla pasa al frente; la Activity pierde el foco</string>
+    <string name="desc_onStop">la Activity ya no es visible para el usuario</string>
+    <string name="desc_onRestart">la Activity vuelve a empezar después de haber estado detenida</string>
+    <string name="desc_onDestroy">la Activity se destruye (se cierra o el sistema la recrea)</string>
+
+    <!-- SegundaActivity -->
+    <string name="mensaje_despedida">¡Gracias por usar nuestra app! Hasta pronto</string>
+    <string name="titulo_integrantes">Integrantes del Grupo 1</string>
+    <string name="integrante_1">Eymer Baez - Matrícula: 1-24-3833</string>
+    <string name="integrante_2">Ebelio Francisco - Matrícula: 1-24-3647</string>
+    <string name="integrante_3">Enrique Rincon - Matrícula: 1-24-3689</string>
+    <string name="integrante_4">Angel Ventura - Matrícula: 1-24-3690</string>
+    <string name="boton_salir">Salir</string>
+    <string name="boton_volver">Volver</string>
+</resources>
