@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  App: Adopción de Mascotas
+  Integrantes (Grupo 1):
+    Eymer Baez - Matrícula: 1-24-3833
+    Ebelio Francisco - Matrícula: 1-24-3647
+    Enrique Rincon - Matrícula: 1-24-3689
+    Angel Ventura - Matrícula: 1-24-3690
+-->
+<resources>
+    <string name="app_name">Adopción de Mascotas</string>
+    <string name="barra_titulo">UTESA · Interfaces gráficas</string>
+
+    <!-- Formulario -->
+    <string name="titulo">Adopción de Mascotas</string>
+    <string name="subtitulo">Elija su mascota y complete la solicitud</string>
+    <string name="lbl_tipo">Tipo de mascota</string>
+    <string name="prompt_tipo">Seleccione el tipo de mascota</string>
+    <string name="desc_imagen_mascota">Imagen de la mascota seleccionada</string>
+    <string name="lbl_adoptante">Nombre del adoptante</string>
+    <string name="hint_adoptante">Ej.: María Gómez</string>
+    <string name="lbl_telefono">Teléfono</string>
+    <string name="hint_telefono">Ej.: 809-555-1234</string>
+    <string name="lbl_nombre_mascota">Nombre que le pondrá a la mascota</string>
+    <string name="hint_nombre_mascota">Ej.: Max</string>
+    <string name="lbl_tamano">Tamaño</string>
+    <string name="tamano_pequeno">Pequeño</string>
+    <string name="tamano_mediano">Mediano</string>
+    <string name="tamano_grande">Grande</string>
+    <string name="lbl_extras">Condiciones</string>
+    <string name="cb_vacunado">Vacunado</string>
+    <string name="cb_esterilizado">Esterilizado</string>
+    <string name="cb_transporte">Necesita transporte</string>
+    <string name="lbl_edad">Edad de la mascota (meses)</string>
+    <plurals name="edad_meses">
+        <item quantity="one">%1$d mes</item>
+        <item quantity="other">%1$d meses</item>
+    </plurals>
+    <string name="btn_solicitar">Solicitar adopción</string>
+    <string name="btn_limpiar">Limpiar</string>
+    <string name="btn_desarrolladores">Desarrolladores</string>
+
+    <!-- Lista -->
+    <string name="lbl_lista">Solicitudes de adopción</string>
+    <string name="contador">Solicitudes registradas: %1$d</string>
+    <string name="lista_vacia">Aún no hay solicitudes.</string>
+    <string name="fila_adoptante">Adoptante: %1$s</string>
+    <string name="fila_tipo">%1$s · %2$s</string>
+
+    <!-- Validación -->
+    <string name="error_adoptante">Escriba el nombre del adoptante</string>
+    <string name="error_telefono">Escriba el teléfono</string>
+    <string name="error_telefono_formato">Teléfono inválido (10 dígitos)</string>
+    <string name="error_nombre_mascota">Escriba el nombre de la mascota</string>
+
+    <!-- Mensajes -->
+    <string name="dlg_solicitud_titulo">Solicitud de adopción</string>
+    <string name="resumen_solicitud">Mascota: %1$s\nNombre: %2$s\nTamaño: %3$s\nEdad: %4$s\nCondiciones: %5$s\n\nAdoptante: %6$s\nTeléfono: %7$s</string>
+    <string name="sin_condiciones">Ninguna</string>
+    <string name="msg_solicitud_agregada">Solicitud agregada a la lista</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="msg_limpio">Formulario limpio</string>
+
+    <!-- Pantalla de desarrolladores -->
+    <string name="titulo_desarrolladores">Desarrolladores</string>
+    <string name="lbl_app">Aplicación</string>
+    <string name="lbl_asignatura">Asignatura</string>
+    <string name="asignatura">Programación de Dispositivos Móviles</string>
+    <string name="lbl_profesor">Profesor</string>
+    <string name="profesor">Eduardo Arvelo</string>
+    <string name="lbl_integrantes">Integrantes (Grupo 1)</string>
+    <string name="col_nombre">Nombre</string>
+    <string name="col_matricula">Matrícula</string>
+    <string name="dev1_nombre">Eymer Baez</string>
+    <string name="dev1_matricula">1-24-3833</string>
+    <string name="dev2_nombre">Ebelio Francisco</string>
+    <string name="dev2_matricula">1-24-3647</string>
+    <string name="dev3_nombre">Enrique Rincon</string>
+    <string name="dev3_matricula">1-24-3689</string>
+    <string name="dev4_nombre">Angel Ventura</string>
+    <string name="dev4_matricula">1-24-3690</string>
+    <string name="btn_volver">Volver</string>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  App: Adopción de Mascotas
+  Integrantes (Grupo 1):
+    Eymer Baez - Matrícula: 1-24-3833
+    Ebelio Francisco - Matrícula: 1-24-3647
+    Enrique Rincon - Matrícula: 1-24-3689
+    Angel Ventura - Matrícula: 1-24-3690
+-->
+<resources>
+    <!-- Opciones del Spinner "Tipo de mascota" (se cargan con ArrayAdapter.createFromResource) -->
+    <string-array name="tipos_mascota">
+        <item>Perro</item>
+        <item>Gato</item>
+        <item>Conejo</item>
+        <item>Pájaro</item>
+        <item>Pez</item>
+    </string-array>
+
+    <!-- Descripción corta de cada mascota (mismo orden que tipos_mascota) -->
+    <string-array name="descripciones_mascota">
+        <item>Leal, juguetón y protector</item>
+        <item>Independiente y cariñoso</item>
+        <item>Tranquilo y muy sociable</item>
+        <item>Alegre y cantador</item>
+        <item>Fácil de cuidar y relajante</item>
+    </string-array>
+
+    <!-- Imagen de cada mascota (mismo orden que tipos_mascota) -->
+    <array name="imagenes_mascota">
+        <item>@drawable/ic_perro</item>
+        <item>@drawable/ic_gato</item>
+        <item>@drawable/ic_conejo</item>
+        <item>@drawable/ic_pajaro</item>
+        <item>@drawable/ic_pez</item>
+    </array>
+</resources>

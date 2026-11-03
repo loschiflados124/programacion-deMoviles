@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  App: Registro Estudiantil UTESA
+  Integrantes (Grupo 1):
+    Eymer Baez - Matrícula: 1-24-3833
+    Ebelio Francisco - Matrícula: 1-24-3647
+    Enrique Rincon - Matrícula: 1-24-3689
+    Angel Ventura - Matrícula: 1-24-3690
+-->
+<!-- Fondo redondeado en verde UTESA para el Toast de detalle -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/utesa_green" />
+    <corners android:radius="12dp" />
+</shape>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  App: Adopción de Mascotas
+  Integrantes (Grupo 1):
+    Eymer Baez - Matrícula: 1-24-3833
+    Ebelio Francisco - Matrícula: 1-24-3647
+    Enrique Rincon - Matrícula: 1-24-3689
+    Angel Ventura - Matrícula: 1-24-3690
+-->
+<!-- Perro: cara café con orejas caídas, hocico claro y lengua -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    <!-- Fondo circular -->
+    <path android:fillColor="#FFF3E0" android:pathData="M4,100 a96,96 0 1,0 192,0 a96,96 0 1,0 -192,0 Z" />
+    <!-- Orejas -->
+    <group android:rotation="25" android:pivotX="55" android:pivotY="70">
+        <path android:fillColor="#5D4037" android:pathData="M30,100 a22,44 0 1,0 44,0 a22,44 0 1,0 -44,0 Z" />
+    </group>
+    <group android:rotation="-25" android:pivotX="145" android:pivotY="70">
+        <path android:fillColor="#5D4037" android:pathData="M126,100 a22,44 0 1,0 44,0 a22,44 0 1,0 -44,0 Z" />
+    </group>
+    <!-- Cabeza y mancha del ojo -->
+    <path android:fillColor="#A1887F" android:pathData="M46,105 a54,52 0 1,0 108,0 a54,52 0 1,0 -108,0 Z" />
+    <path android:fillColor="#795548" android:pathData="M105,92 a17,15 0 1,0 34,0 a17,15 0 1,0 -34,0 Z" />
+    <!-- Hocico -->
+    <path android:fillColor="#EFEBE9" android:pathData="M70,132 a30,22 0 1,0 60,0 a30,22 0 1,0 -60,0 Z" />
+    <!-- Lengua -->
+    <path android:fillColor="#F06292" android:pathData="M93,146 a7,9 0 1,0 14,0 a7,9 0 1,0 -14,0 Z" />
+    <!-- Ojos -->
+    <path android:fillColor="#212121" android:pathData="M73,95 a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0 Z" />
+    <path android:fillColor="#212121" android:pathData="M113,95 a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0 Z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M79.5,93 a2.5,2.5 0 1,0 5.0,0 a2.5,2.5 0 1,0 -5.0,0 Z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M119.5,93 a2.5,2.5 0 1,0 5.0,0 a2.5,2.5 0 1,0 -5.0,0 Z" />
+    <!-- Nariz y boca -->
+    <path android:fillColor="#212121" android:pathData="M89,120 a11,8 0 1,0 22,0 a11,8 0 1,0 -22,0 Z" />
+    <path android:strokeColor="#3E2723" android:strokeWidth="3" android:strokeLineCap="round" android:strokeLineJoin="round" android:pathData="M100,127 L100,136 M100,136 Q91,144 84,137 M100,136 Q109,144 116,137" />
+</vector>

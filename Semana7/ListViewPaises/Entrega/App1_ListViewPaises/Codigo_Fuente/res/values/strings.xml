@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  App: ListViewPaises
+  Proyecto del documento: Proyecto006 - Control ListView (con una lista de String)
+  Integrantes (Grupo 1):
+    Eymer Baez - Matrícula: 1-24-3833
+    Ebelio Francisco - Matrícula: 1-24-3647
+    Enrique Rincon - Matrícula: 1-24-3689
+    Angel Ventura - Matrícula: 1-24-3690
+-->
+<resources>
+    <!-- Título de la app (se muestra en la barra superior) -->
+    <string name="app_name">ListView Países</string>
+
+    <!-- Texto inicial del TextView tv1 -->
+    <string name="seleccione_pais">Seleccione un país</string>
+
+    <!-- Mensaje al seleccionar un país: "Población de [país] es [habitantes]" -->
+    <string name="poblacion_de">Población de %1$s es %2$s</string>
+
+    <!-- Pie de pantalla con los integrantes -->
+    <string name="desarrollado_por">Desarrollado por (Grupo 1):\nEymer Baez - Matrícula: 1-24-3833\nEbelio Francisco - Matrícula: 1-24-3647\nEnrique Rincon - Matrícula: 1-24-3689\nAngel Ventura - Matrícula: 1-24-3690</string>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  App: ImageButtonLlamar
+  Proyecto del documento: Proyecto007 - Control ImageButton
+  Integrantes (Grupo 1):
+    Eymer Baez - Matrícula: 1-24-3833
+    Ebelio Francisco - Matrícula: 1-24-3647
+    Enrique Rincon - Matrícula: 1-24-3689
+    Angel Ventura - Matrícula: 1-24-3690
+-->
+<resources>
+    <!-- Verde institucional de UTESA: barra superior y botones -->
+    <color name="utesa_green">#076633</color>
+    <color name="utesa_green_claro">#E6F2EB</color>
+    <color name="white">#FFFFFF</color>
+    <color name="fondo">#FFFFFF</color>
+    <color name="texto_principal">#212121</color>
+    <color name="texto_secundario">#555555</color>
+    <color name="divisor">#C8D6CD</color>
+</resources>

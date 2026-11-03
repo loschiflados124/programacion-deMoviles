@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  App: Adopción de Mascotas
+  Integrantes (Grupo 1):
+    Eymer Baez - Matrícula: 1-24-3833
+    Ebelio Francisco - Matrícula: 1-24-3647
+    Enrique Rincon - Matrícula: 1-24-3689
+    Angel Ventura - Matrícula: 1-24-3690
+-->
+<!-- Vista del Toast con el detalle completo de una solicitud
+     (un Toast de solo texto se recorta a 2 líneas en Android 12+). -->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tvToast"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fondo_toast"
+    android:lineSpacingExtra="2dp"
+    android:padding="16dp"
+    android:textColor="@color/white"
+    android:textSize="14sp" />

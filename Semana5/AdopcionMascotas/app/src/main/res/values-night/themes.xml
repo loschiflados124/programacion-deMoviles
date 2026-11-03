@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  App: Adopción de Mascotas
+  Integrantes (Grupo 1):
+    Eymer Baez - Matrícula: 1-24-3833
+    Ebelio Francisco - Matrícula: 1-24-3647
+    Enrique Rincon - Matrícula: 1-24-3689
+    Angel Ventura - Matrícula: 1-24-3690
+-->
+<resources>
+    <!-- Mismo tema claro también en modo noche (ver values/themes.xml). -->
+    <style name="Base.Theme.AdopcionMascotas" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/utesa_green</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:windowBackground">@color/fondo</item>
+    </style>
+</resources>

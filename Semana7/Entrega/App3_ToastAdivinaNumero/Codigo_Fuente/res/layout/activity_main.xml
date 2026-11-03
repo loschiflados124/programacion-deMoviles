@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  App: ToastAdivinaNumero
+  Proyecto del documento: Proyecto008 - Notificaciones sencillas mediante la clase Toast
+  Integrantes (Grupo 1):
+    Eymer Baez - Matrícula: 1-24-3833
+    Ebelio Francisco - Matrícula: 1-24-3647
+    Enrique Rincon - Matrícula: 1-24-3689
+    Angel Ventura - Matrícula: 1-24-3690
+-->
+<!-- Vista raíz RelativeLayout (como en el documento). Recibe como padding los insets de
+     las barras del sistema y de la cámara (ver MainActivity). -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/utesa_green">
+
+    <!-- Barra superior en verde UTESA (equivale a la ActionBar del documento) -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/utesa_green"
+        android:minHeight="56dp"
+        app:titleTextColor="@color/white" />
+
+    <!-- Zona de contenido con fondo blanco debajo de la barra -->
+    <RelativeLayout
+        android:id="@+id/contenido"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:background="@color/fondo"
+        android:padding="16dp">
+
+        <!-- Pregunta al usuario por el número que vio en el Toast -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="@string/pregunta"
+            android:textColor="@color/texto_principal"
+            android:textSize="20sp" />
+
+        <!-- EditText de tipo "Number": solo permite ingresar dígitos -->
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:layout_marginTop="8dp"
+            android:autofillHints=""
+            android:hint="@string/hint_numero"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textSize="18sp" />
+
+        <!-- Botón "Controlar": ejecuta el método controlar() de MainActivity (propiedad onClick) -->
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/utesa_green"
+            android:onClick="controlar"
+            android:text="@string/controlar"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <!-- Botón "Nuevo número": genera otro número para jugar de nuevo (mejora) -->
+        <Button
+            android:id="@+id/btnNuevo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/button"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/button"
+            android:backgroundTint="@color/utesa_green"
+            android:onClick="nuevoNumero"
+            android:text="@string/nuevo_numero"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <!-- Pie de pantalla con los integrantes del grupo -->
+        <TextView
+            android:id="@+id/tvDesarrollado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/utesa_green_claro"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:text="@string/desarrollado_por"
+            android:textColor="@color/texto_secundario"
+            android:textSize="11sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

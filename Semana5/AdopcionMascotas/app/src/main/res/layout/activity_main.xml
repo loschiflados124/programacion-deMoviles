@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  App: Adopción de Mascotas
+  Integrantes (Grupo 1):
+    Eymer Baez - Matrícula: 1-24-3833
+    Ebelio Francisco - Matrícula: 1-24-3647
+    Enrique Rincon - Matrícula: 1-24-3689
+    Angel Ventura - Matrícula: 1-24-3690
+-->
+<!-- Vista raíz: recibe como padding los insets de las barras del sistema (ver MainActivity). -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/utesa_green"
+    android:orientation="vertical">
+
+    <!-- Barra superior en verde UTESA -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/utesa_green"
+        android:minHeight="56dp"
+        app:title="@string/barra_titulo"
+        app:titleTextColor="@color/white" />
+
+    <!-- ScrollView: el formulario completo se puede desplazar en pantallas pequeñas u horizontal -->
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/fondo"
+        android:fillViewport="true">
+
+        <!-- Contenedor vertical con todo el contenido -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- RelativeLayout: sección superior con el título, el Spinner,
+                 la imagen y los datos de la mascota posicionados de forma relativa -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- TextView: título de la pantalla, arriba del todo -->
+                <TextView
+                    android:id="@+id/tvTitulo"
+                    style="@style/Titulo"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/titulo" />
+
+                <!-- TextView: indicación, debajo del título -->
+                <TextView
+                    android:id="@+id/tvSubtitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvTitulo"
+                    android:gravity="center_horizontal"
+                    android:text="@string/subtitulo"
+                    android:textColor="@color/texto_secundario"
+                    android:textSize="14sp" />
+
+                <!-- TextView: etiqueta del Spinner, debajo de la indicación -->
+                <TextView
+                    android:id="@+id/tvEtiquetaTipo"
+                    style="@style/Etiqueta"
+                    android:layout_below="@id/tvSubtitulo"
+                    android:text="@string/lbl_tipo" />
+
+                <!-- Spinner: tipo de mascota (opciones en arrays.xml) -->
+                <Spinner
+                    android:id="@+id/spTipo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvEtiquetaTipo"
+                    android:minHeight="48dp"
+                    android:prompt="@string/prompt_tipo"
+                    android:spinnerMode="dialog" />
+
+                <!-- ImageView grande: cambia según la mascota elegida en el Spinner -->
+                <ImageView
+                    android:id="@+id/ivMascota"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_below="@id/spTipo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:contentDescription="@string/desc_imagen_mascota"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_perro" />
+
+                <!-- TextView: nombre del tipo de mascota, centrado debajo de la imagen -->
+                <TextView
+                    android:id="@+id/tvTipoMascota"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ivMascota"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/utesa_green"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <!-- TextView: descripción de la mascota, debajo del nombre -->
+                <TextView
+                    android:id="@+id/tvDescripcionMascota"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvTipoMascota"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/texto_secundario"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <!-- EditText: nombre del adoptante -->
+            <TextView
+                style="@style/Etiqueta"
+                android:labelFor="@id/etAdoptante"
+                android:text="@string/lbl_adoptante" />
+
+            <EditText
+                android:id="@+id/etAdoptante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="name"
+                android:hint="@string/hint_adoptante"
+                android:inputType="textPersonName|textCapWords"
+                android:minHeight="48dp"
+                android:textSize="16sp" />
+
+            <!-- EditText: teléfono (teclado telefónico) -->
+            <TextView
+                style="@style/Etiqueta"
+                android:labelFor="@id/etTelefono"
+                android:text="@string/lbl_telefono" />
+
+            <EditText
+                android:id="@+id/etTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="phone"
+                android:hint="@string/hint_telefono"
+                android:inputType="phone"
+                android:minHeight="48dp"
+                android:textSize="16sp" />
+
+            <!-- EditText: nombre que se le pondrá a la mascota -->
+            <TextView
+                style="@style/Etiqueta"
+                android:labelFor="@id/etNombreMascota"
+                android:text="@string/lbl_nombre_mascota" />
+
+            <EditText
+                android:id="@+id/etNombreMascota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:importantForAutofill="no"
+                android:hint="@string/hint_nombre_mascota"
+                android:inputType="textPersonName|textCapWords"
+                android:minHeight="48dp"
+                android:textSize="16sp" />
+
+            <!-- RadioGroup: tamaño (solo uno seleccionable) -->
+            <TextView
+                style="@style/Etiqueta"
+                android:text="@string/lbl_tamano" />
+
+            <RadioGroup
+                android:id="@+id/rgTamano"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checkedButton="@id/rbMediano"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbPequeno"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tamano_pequeno"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/rbMediano"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tamano_mediano"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/rbGrande"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tamano_grande"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <!-- CheckBox: condiciones de la mascota (varias seleccionables) -->
+            <TextView
+                style="@style/Etiqueta"
+                android:text="@string/lbl_extras" />
+
+            <CheckBox
+                android:id="@+id/cbVacunado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cb_vacunado"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/cbEsterilizado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cb_esterilizado"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/cbTransporte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cb_transporte"
+                android:textSize="15sp" />
+
+            <!-- SeekBar: edad de la mascota en meses (1 a 120); el TextView muestra el valor -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Etiqueta"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/lbl_edad" />
+
+                <!-- TextView: valor actual de la SeekBar -->
+                <TextView
+                    android:id="@+id/tvEdad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/texto_principal"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- max=119 porque minSdk 24 no admite android:min; en código se suma 1 (1..120) -->
+            <SeekBar
+                android:id="@+id/sbEdad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="119"
+                android:minHeight="48dp"
+                android:progress="11" />
+
+            <!-- Button: valida y envía la solicitud -->
+            <Button
+                android:id="@+id/btnSolicitar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/btn_solicitar"
+                android:textSize="15sp" />
+
+            <!-- Botones Limpiar y Desarrolladores, uno al lado del otro -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Button: vacía el formulario -->
+                <Button
+                    android:id="@+id/btnLimpiar"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:text="@string/btn_limpiar"
+                    android:textSize="15sp" />
+
+                <!-- Button: abre la pantalla de desarrolladores -->
+                <Button
+                    android:id="@+id/btnDesarrolladores"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:text="@string/btn_desarrolladores"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <!-- TextView: título de la lista con el contador de solicitudes -->
+            <TextView
+                android:id="@+id/tvContador"
+                style="@style/Etiqueta"
+                android:layout_marginTop="16dp"
+                android:textSize="16sp" />
+
+            <!-- TextView: aviso que se muestra cuando la lista está vacía -->
+            <TextView
+                android:id="@+id/tvListaVacia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="@string/lista_vacia"
+                android:textColor="@color/texto_secundario"
+                android:textSize="14sp" />
+
+            <!-- ListView: solicitudes con adaptador personalizado (item_solicitud.xml).
+                 Altura fija y desplazamiento anidado para convivir con el ScrollView. -->
+            <ListView
+                android:id="@+id/lvSolicitudes"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:background="@color/utesa_green_claro"
+                android:divider="@color/borde"
+                android:dividerHeight="1dp"
+                android:nestedScrollingEnabled="true" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

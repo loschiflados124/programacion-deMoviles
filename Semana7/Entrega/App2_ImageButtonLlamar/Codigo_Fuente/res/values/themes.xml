@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  App: ImageButtonLlamar
+  Proyecto del documento: Proyecto007 - Control ImageButton
+  Integrantes (Grupo 1):
+    Eymer Baez - Matrícula: 1-24-3833
+    Ebelio Francisco - Matrícula: 1-24-3647
+    Enrique Rincon - Matrícula: 1-24-3689
+    Angel Ventura - Matrícula: 1-24-3690
+-->
+<resources>
+    <!-- Tema claro fijo para que el verde institucional se vea igual en cualquier dispositivo.
+         Sin ActionBar del sistema: la barra superior es un Toolbar del layout que se
+         registra con setSupportActionBar() (equivale a la ActionBar del documento). -->
+    <style name="Base.Theme.ImageButtonLlamar" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/utesa_green</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:windowBackground">@color/fondo</item>
+    </style>
+
+    <style name="Theme.ImageButtonLlamar" parent="Base.Theme.ImageButtonLlamar" />
+</resources>

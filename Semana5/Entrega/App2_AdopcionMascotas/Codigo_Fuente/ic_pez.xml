@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  App: Adopción de Mascotas
+  Integrantes (Grupo 1):
+    Eymer Baez - Matrícula: 1-24-3833
+    Ebelio Francisco - Matrícula: 1-24-3647
+    Enrique Rincon - Matrícula: 1-24-3689
+    Angel Ventura - Matrícula: 1-24-3690
+-->
+<!-- Pez: pez payaso naranja con franjas blancas y burbujas -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    <!-- Fondo circular -->
+    <path android:fillColor="#E1F5FE" android:pathData="M4,100 a96,96 0 1,0 192,0 a96,96 0 1,0 -192,0 Z" />
+    <!-- Cola y aletas -->
+    <path android:fillColor="#E65100" android:pathData="M58,100 L20,66 L30,100 L20,134 Z" />
+    <path android:fillColor="#E65100" android:pathData="M80,66 Q104,36 132,66 Z" />
+    <path android:fillColor="#E65100" android:pathData="M92,132 Q108,158 124,132 Z" />
+    <!-- Cuerpo -->
+    <path android:fillColor="#FF8A00" android:pathData="M43,100 a62,40 0 1,0 124,0 a62,40 0 1,0 -124,0 Z" />
+    <!-- Franjas blancas -->
+    <path android:fillColor="#FFFFFF" android:strokeColor="#212121" android:strokeWidth="2" android:pathData="M78,100 a8,37 0 1,0 16,0 a8,37 0 1,0 -16,0 Z M118,100 a8,36 0 1,0 16,0 a8,36 0 1,0 -16,0 Z" />
+    <!-- Ojo y boca -->
+    <path android:fillColor="#FFFFFF" android:pathData="M137,92 a9,9 0 1,0 18,0 a9,9 0 1,0 -18,0 Z" />
+    <path android:fillColor="#212121" android:pathData="M143,92 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0 Z" />
+    <path android:strokeColor="#BF360C" android:strokeWidth="2.5" android:strokeLineCap="round" android:strokeLineJoin="round" android:pathData="M164,110 Q158,114 165,117" />
+    <!-- Burbujas -->
+    <path android:strokeColor="#29B6F6" android:strokeWidth="2.5" android:strokeLineCap="round" android:strokeLineJoin="round" android:pathData="M165,58 a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0 Z M177,36 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0 Z M160.5,28 a3.5,3.5 0 1,0 7.0,0 a3.5,3.5 0 1,0 -7.0,0 Z" />
+</vector>

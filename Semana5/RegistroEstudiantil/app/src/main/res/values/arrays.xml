@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  App: Registro Estudiantil UTESA
+  Integrantes (Grupo 1):
+    Eymer Baez - Matrícula: 1-24-3833
+    Ebelio Francisco - Matrícula: 1-24-3647
+    Enrique Rincon - Matrícula: 1-24-3689
+    Angel Ventura - Matrícula: 1-24-3690
+-->
+<resources>
+    <!-- Opciones del Spinner "Carrera" (se cargan con ArrayAdapter.createFromResource) -->
+    <string-array name="carreras">
+        <item>Ingeniería en Sistemas Computacionales</item>
+        <item>Ingeniería Industrial</item>
+        <item>Ingeniería Civil</item>
+        <item>Administración de Empresas</item>
+        <item>Contabilidad</item>
+        <item>Derecho</item>
+        <item>Medicina</item>
+        <item>Arquitectura</item>
+    </string-array>
+</resources>

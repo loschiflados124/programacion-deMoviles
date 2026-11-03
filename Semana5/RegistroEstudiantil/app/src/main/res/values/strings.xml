@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  App: Registro Estudiantil UTESA
+  Integrantes (Grupo 1):
+    Eymer Baez - Matrícula: 1-24-3833
+    Ebelio Francisco - Matrícula: 1-24-3647
+    Enrique Rincon - Matrícula: 1-24-3689
+    Angel Ventura - Matrícula: 1-24-3690
+-->
+<resources>
+    <string name="app_name">Registro Estudiantil UTESA</string>
+    <string name="barra_titulo">UTESA · Interfaces gráficas</string>
+
+    <!-- Formulario -->
+    <string name="titulo">Registro Estudiantil UTESA</string>
+    <string name="subtitulo">Complete los datos del estudiante</string>
+    <string name="lbl_nombre">Nombre completo</string>
+    <string name="hint_nombre">Ej.: Juan Pérez</string>
+    <string name="lbl_matricula">Matrícula</string>
+    <string name="hint_matricula">1-24-0000</string>
+    <string name="lbl_edad">Edad</string>
+    <string name="hint_edad">Ej.: 20</string>
+    <string name="lbl_carrera">Carrera</string>
+    <string name="prompt_carrera">Seleccione la carrera</string>
+    <string name="lbl_tanda">Tanda</string>
+    <string name="tanda_matutina">Matutina</string>
+    <string name="tanda_vespertina">Vespertina</string>
+    <string name="tanda_nocturna">Nocturna</string>
+    <string name="lbl_asignaturas">Asignaturas de interés</string>
+    <string name="asig_movil">Programación Móvil</string>
+    <string name="asig_bd">Bases de Datos</string>
+    <string name="asig_redes">Redes</string>
+    <string name="asig_ia">Inteligencia Artificial</string>
+    <string name="btn_registrar">Registrar</string>
+    <string name="btn_limpiar">Limpiar</string>
+    <string name="btn_desarrolladores">Desarrolladores</string>
+
+    <!-- Lista -->
+    <string name="lbl_lista">Estudiantes registrados</string>
+    <string name="contador">Estudiantes registrados: %1$d</string>
+    <string name="lista_vacia">Aún no hay estudiantes registrados.</string>
+    <string name="fila_estudiante">%1$s - %2$s - %3$s</string>
+
+    <!-- Validación -->
+    <string name="error_nombre">Escriba el nombre completo</string>
+    <string name="error_matricula">Escriba la matrícula</string>
+    <string name="error_matricula_formato">Formato inválido. Use 1-24-0000</string>
+    <string name="error_matricula_repetida">Esta matrícula ya está registrada</string>
+    <string name="error_edad">Escriba la edad</string>
+    <string name="error_edad_rango">Edad inválida (entre 15 y 99)</string>
+
+    <!-- Mensajes -->
+    <string name="dlg_registro_titulo">Estudiante registrado</string>
+    <string name="detalle_estudiante">Nombre: %1$s\nMatrícula: %2$s\nEdad: %3$d años\nCarrera: %4$s\nTanda: %5$s\nAsignaturas de interés: %6$s</string>
+    <string name="ninguna">Ninguna</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="dlg_eliminar_titulo">Eliminar estudiante</string>
+    <string name="dlg_eliminar_mensaje">¿Desea eliminar a %1$s (%2$s) de la lista?</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="msg_eliminado">Estudiante eliminado</string>
+    <string name="msg_limpio">Formulario limpio</string>
+
+    <!-- Pantalla de desarrolladores -->
+    <string name="titulo_desarrolladores">Desarrolladores</string>
+    <string name="lbl_app">Aplicación</string>
+    <string name="lbl_asignatura">Asignatura</string>
+    <string name="asignatura">Programación de Dispositivos Móviles</string>
+    <string name="lbl_profesor">Profesor</string>
+    <string name="profesor">Eduardo Arvelo</string>
+    <string name="lbl_integrantes">Integrantes (Grupo 1)</string>
+    <string name="col_nombre">Nombre</string>
+    <string name="col_matricula">Matrícula</string>
+    <string name="dev1_nombre">Eymer Baez</string>
+    <string name="dev1_matricula">1-24-3833</string>
+    <string name="dev2_nombre">Ebelio Francisco</string>
+    <string name="dev2_matricula">1-24-3647</string>
+    <string name="dev3_nombre">Enrique Rincon</string>
+    <string name="dev3_matricula">1-24-3689</string>
+    <string name="dev4_nombre">Angel Ventura</string>
+    <string name="dev4_matricula">1-24-3690</string>
+    <string name="btn_volver">Volver</string>
+</resources>

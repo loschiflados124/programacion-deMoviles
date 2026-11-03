@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  App: Adopción de Mascotas
+  Integrantes (Grupo 1):
+    Eymer Baez - Matrícula: 1-24-3833
+    Ebelio Francisco - Matrícula: 1-24-3647
+    Enrique Rincon - Matrícula: 1-24-3689
+    Angel Ventura - Matrícula: 1-24-3690
+-->
+<resources>
+    <!-- Tema claro fijo para que el verde institucional se vea igual en cualquier dispositivo. -->
+    <style name="Base.Theme.AdopcionMascotas" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/utesa_green</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:windowBackground">@color/fondo</item>
+    </style>
+
+    <style name="Theme.AdopcionMascotas" parent="Base.Theme.AdopcionMascotas" />
+
+    <!-- Título grande en verde UTESA -->
+    <style name="Titulo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/utesa_green</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Etiqueta de cada sección del formulario -->
+    <style name="Etiqueta">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:textColor">@color/utesa_green</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Celda de la tabla de desarrolladores -->
+    <style name="Celda">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textColor">@color/texto_principal</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!-- Celda de encabezado (Nombre / Matrícula) -->
+    <style name="CeldaEncabezado" parent="Celda">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

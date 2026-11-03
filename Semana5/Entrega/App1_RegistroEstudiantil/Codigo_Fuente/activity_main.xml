@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  App: Registro Estudiantil UTESA
+  Integrantes (Grupo 1):
+    Eymer Baez - Matrícula: 1-24-3833
+    Ebelio Francisco - Matrícula: 1-24-3647
+    Enrique Rincon - Matrícula: 1-24-3689
+    Angel Ventura - Matrícula: 1-24-3690
+-->
+<!-- Vista raíz: recibe como padding los insets de las barras del sistema (ver MainActivity). -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/utesa_green"
+    android:orientation="vertical">
+
+    <!-- Barra superior en verde UTESA -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/utesa_green"
+        android:minHeight="56dp"
+        app:title="@string/barra_titulo"
+        app:titleTextColor="@color/white" />
+
+    <!-- ScrollView: el formulario completo se puede desplazar en pantallas pequeñas u horizontal -->
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/fondo"
+        android:fillViewport="true">
+
+        <!-- Contenedor vertical con todos los elementos del formulario -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- TextView: título de la pantalla -->
+            <TextView
+                android:id="@+id/tvTitulo"
+                style="@style/Titulo"
+                android:text="@string/titulo" />
+
+            <!-- TextView: indicación breve debajo del título -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:gravity="center_horizontal"
+                android:text="@string/subtitulo"
+                android:textColor="@color/texto_secundario"
+                android:textSize="14sp" />
+
+            <!-- EditText: nombre completo del estudiante -->
+            <TextView
+                style="@style/Etiqueta"
+                android:labelFor="@id/etNombre"
+                android:text="@string/lbl_nombre" />
+
+            <EditText
+                android:id="@+id/etNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="name"
+                android:hint="@string/hint_nombre"
+                android:inputType="textPersonName|textCapWords"
+                android:minHeight="48dp"
+                android:textSize="16sp" />
+
+            <!-- EditText: matrícula con formato 1-24-0000 (solo dígitos y guiones) -->
+            <TextView
+                style="@style/Etiqueta"
+                android:labelFor="@id/etMatricula"
+                android:text="@string/lbl_matricula" />
+
+            <EditText
+                android:id="@+id/etMatricula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789-"
+                android:hint="@string/hint_matricula"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="9"
+                android:minHeight="48dp"
+                android:textSize="16sp" />
+
+            <!-- EditText: edad, solo números -->
+            <TextView
+                style="@style/Etiqueta"
+                android:labelFor="@id/etEdad"
+                android:text="@string/lbl_edad" />
+
+            <EditText
+                android:id="@+id/etEdad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_edad"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="2"
+                android:minHeight="48dp"
+                android:textSize="16sp" />
+
+            <!-- Spinner: carrera (opciones en arrays.xml; prompt visible en modo diálogo) -->
+            <TextView
+                style="@style/Etiqueta"
+                android:text="@string/lbl_carrera" />
+
+            <Spinner
+                android:id="@+id/spCarrera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:prompt="@string/prompt_carrera"
+                android:spinnerMode="dialog" />
+
+            <!-- RadioGroup: tanda (solo una opción seleccionable) -->
+            <TextView
+                style="@style/Etiqueta"
+                android:text="@string/lbl_tanda" />
+
+            <RadioGroup
+                android:id="@+id/rgTanda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checkedButton="@id/rbMatutina"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbMatutina"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tanda_matutina"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/rbVespertina"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tanda_vespertina"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/rbNocturna"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tanda_nocturna"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <!-- CheckBox: asignaturas de interés (varias seleccionables) -->
+            <TextView
+                style="@style/Etiqueta"
+                android:text="@string/lbl_asignaturas" />
+
+            <CheckBox
+                android:id="@+id/cbMovil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/asig_movil"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/cbBaseDatos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/asig_bd"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/cbRedes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/asig_redes"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/cbIA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/asig_ia"
+                android:textSize="15sp" />
+
+            <!-- Botones Registrar y Limpiar, uno al lado del otro -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <!-- Button: valida y registra al estudiante -->
+                <Button
+                    android:id="@+id/btnRegistrar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:text="@string/btn_registrar"
+                    android:textSize="15sp" />
+
+                <!-- Button: vacía el formulario -->
+                <Button
+                    android:id="@+id/btnLimpiar"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:text="@string/btn_limpiar"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <!-- TextView: contador de estudiantes registrados -->
+            <TextView
+                android:id="@+id/tvContador"
+                style="@style/Etiqueta"
+                android:layout_marginTop="16dp"
+                android:textSize="16sp" />
+
+            <!-- TextView: aviso que se muestra cuando la lista está vacía -->
+            <TextView
+                android:id="@+id/tvListaVacia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="@string/lista_vacia"
+                android:textColor="@color/texto_secundario"
+                android:textSize="14sp" />
+
+            <!-- ListView: estudiantes registrados (nombre - matrícula - carrera).
+                 Altura fija y desplazamiento anidado para convivir con el ScrollView. -->
+            <ListView
+                android:id="@+id/lvEstudiantes"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@color/utesa_green_claro"
+                android:divider="@color/borde"
+                android:dividerHeight="1dp"
+                android:nestedScrollingEnabled="true" />
+
+            <!-- Button: abre la pantalla de desarrolladores -->
+            <Button
+                android:id="@+id/btnDesarrolladores"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/btn_desarrolladores"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

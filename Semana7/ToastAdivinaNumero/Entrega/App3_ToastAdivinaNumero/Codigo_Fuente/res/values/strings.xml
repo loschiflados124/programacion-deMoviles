@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  App: ToastAdivinaNumero
+  Proyecto del documento: Proyecto008 - Notificaciones sencillas mediante la clase Toast
+  Integrantes (Grupo 1):
+    Eymer Baez - Matrícula: 1-24-3833
+    Ebelio Francisco - Matrícula: 1-24-3647
+    Enrique Rincon - Matrícula: 1-24-3689
+    Angel Ventura - Matrícula: 1-24-3690
+-->
+<resources>
+    <!-- Título de la app (se muestra en la barra superior) -->
+    <string name="app_name">Toast Adivina Número</string>
+
+    <!-- Pregunta del TextView textView -->
+    <string name="pregunta">¿Cuál es el número que vio?</string>
+
+    <!-- Pista del EditText -->
+    <string name="hint_numero">Ingrese el número</string>
+
+    <!-- Textos de los botones -->
+    <string name="controlar">Controlar</string>
+    <string name="nuevo_numero">Nuevo número</string>
+
+    <!-- Mensajes de los Toast (mismos textos del documento) -->
+    <string name="acerto">Muy bien recordaste el número mostrado.</string>
+    <string name="no_acerto">Lo siento pero no es el número que mostré.</string>
+
+    <!-- Mensaje del Toast cuando el campo está vacío o no es un número válido (mejora) -->
+    <string name="ingrese_numero">Por favor, ingrese un número válido.</string>
+
+    <!-- Pie de pantalla con los integrantes -->
+    <string name="desarrollado_por">Desarrollado por (Grupo 1):\nEymer Baez - Matrícula: 1-24-3833\nEbelio Francisco - Matrícula: 1-24-3647\nEnrique Rincon - Matrícula: 1-24-3689\nAngel Ventura - Matrícula: 1-24-3690</string>
+</resources>

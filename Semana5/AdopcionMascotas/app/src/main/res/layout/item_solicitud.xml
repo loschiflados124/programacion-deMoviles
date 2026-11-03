@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  App: Adopción de Mascotas
+  Integrantes (Grupo 1):
+    Eymer Baez - Matrícula: 1-24-3833
+    Ebelio Francisco - Matrícula: 1-24-3647
+    Enrique Rincon - Matrícula: 1-24-3689
+    Angel Ventura - Matrícula: 1-24-3690
+-->
+<!-- Fila del ListView de solicitudes: imagen pequeña + nombre de la mascota + adoptante -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="64dp"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <!-- ImageView: imagen pequeña de la mascota -->
+    <ImageView
+        android:id="@+id/ivItemMascota"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:contentDescription="@string/desc_imagen_mascota" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- TextView: nombre de la mascota y su tipo -->
+        <TextView
+            android:id="@+id/tvItemNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/texto_principal"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- TextView: nombre del adoptante -->
+        <TextView
+            android:id="@+id/tvItemAdoptante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/texto_secundario"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

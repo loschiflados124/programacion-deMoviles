@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  App: ImageButtonLlamar
+  Proyecto del documento: Proyecto007 - Control ImageButton
+  Integrantes (Grupo 1):
+    Eymer Baez - Matrícula: 1-24-3833
+    Ebelio Francisco - Matrícula: 1-24-3647
+    Enrique Rincon - Matrícula: 1-24-3689
+    Angel Ventura - Matrícula: 1-24-3690
+-->
+<resources>
+    <!-- Título de la app (se muestra en la barra superior) -->
+    <string name="app_name">ImageButton Llamar</string>
+
+    <!-- Descripción de la imagen del ImageButton (accesibilidad) -->
+    <string name="descripcion_telefono">Teléfono: presione para llamar</string>
+
+    <!-- Texto inicial del TextView tv1 -->
+    <string name="presione_telefono">Presione el teléfono</string>
+
+    <!-- Mensaje que se muestra en tv1 al presionar el ImageButton (igual que el documento) -->
+    <string name="llamando">Llamando</string>
+
+    <!-- Mensaje del Toast corto (complemento visual) -->
+    <string name="llamando_toast">Llamando...</string>
+
+    <!-- Pie de pantalla con los integrantes -->
+    <string name="desarrollado_por">Desarrollado por (Grupo 1):\nEymer Baez - Matrícula: 1-24-3833\nEbelio Francisco - Matrícula: 1-24-3647\nEnrique Rincon - Matrícula: 1-24-3689\nAngel Ventura - Matrícula: 1-24-3690</string>
+</resources>
